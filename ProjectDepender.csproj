@@ -51,7 +51,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Classes\CyclesReferenceItem.cs" />
+    <Compile Include="Classes\DependencyExtensions.cs" />
     <Compile Include="Classes\RelayCommand.cs" />
+    <Compile Include="ViewModels\CyclesDependenciesViewModel.cs" />
+    <Compile Include="Views\CyclesDependenciesView.xaml.cs">
+      <DependentUpon>CyclesDependenciesView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\DependenciesView.xaml.cs">
       <DependentUpon>DependenciesView.xaml</DependentUpon>
     </Compile>
@@ -116,6 +122,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Views\CyclesDependenciesView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Views\DependenciesView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
