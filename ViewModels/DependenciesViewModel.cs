@@ -7,14 +7,13 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Microsoft.VisualStudio.Shell;
 using EnvDTE;
+
 // Both EnvDTE and Systems.Window include a Window class.
 // Use an alias for the class in System.Windows
 using WpfWindow = System.Windows.Window;
-using ProjectDepender.Classes;
 
 namespace ProjectDepender
 {
-
     public class DependenciesViewModel
     {
         // Public properties

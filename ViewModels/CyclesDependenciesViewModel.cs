@@ -1,13 +1,10 @@
-﻿// Both EnvDTE and Systems.Window include a Window class.
-// Use an alias for the class in System.Windows
-
-using System;
+﻿using System;
+using System.Collections.ObjectModel;
 using System.Windows.Input;
+
 // Both EnvDTE and Systems.Window include a Window class.
 // Use an alias for the class in System.Windows
 using WpfWindow = System.Windows.Window;
-using ProjectDepender.Classes;
-using System.Collections.ObjectModel;
 
 namespace ProjectDepender
 {

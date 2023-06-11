@@ -16,7 +16,6 @@ using System.Diagnostics;
 using System.Collections;
 using System.Collections.Generic;
 using System.Windows;
-using ProjectDepender.Classes;
 
 namespace ProjectDepender
 {
@@ -118,10 +117,6 @@ namespace ProjectDepender
             try
             {
                 DTE dte_object = (package as ProjectDependenciesPackage).dte_object;
-
-                // loop depend check
-
-                //Dictionary<string, >
 
                 var vm = new DependenciesViewModel(dte_object);
 

@@ -75,7 +75,7 @@ namespace ProjectDepender
       ProjectDependencies.Initialize(this);
       base.Initialize();
 
-      dte_object  = GetService ( typeof( EnvDTE.DTE ) ) as EnvDTE.DTE ;
+      dte_object  = await GetServiceAsync ( typeof( EnvDTE.DTE ) ) as EnvDTE.DTE ;
 
     }
 

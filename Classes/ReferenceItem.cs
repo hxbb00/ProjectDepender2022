@@ -9,8 +9,7 @@ using Microsoft.VisualStudio.Shell;
 
 namespace ProjectDepender
 {
-
-    public class ReferenceItem : INotifyPropertyChanged
+  public class ReferenceItem : INotifyPropertyChanged
   {
     // Implementation of INotifyPropertyChanged
     public event PropertyChangedEventHandler PropertyChanged ;
